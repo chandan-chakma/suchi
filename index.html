@@ -1,0 +1,1031 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- <link rel="stylesheet" href="style.css"> -->
+    <title>Document</title>
+
+
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        html {
+            overflow-x: hidden;
+        }
+
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        .custom-page-782 {
+            margin-bottom: 0px;
+            padding-bottom: 30px;
+        }
+
+        .custom-page-782 .main-has-fixed-header {
+            padding-top: 15px;
+        }
+
+        .custom-page-782 .container {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-flow: column nowrap;
+            width: 100%;
+            max-width: 100%;
+            padding: 0;
+            margin-top: -60px;
+        }
+
+        .xcontainer {
+            max-width: 1180px;
+            margin: 0 auto;
+            padding: 50px 25px;
+        }
+
+        .heading {
+            font-size: 40px;
+            font-family: 'Montserrat', sans-serif;
+            font-weight: 800;
+            text-align: center;
+            padding-bottom: 20px;
+            text-transform: capitalize;
+        }
+
+        .btn {
+            text-decoration: none;
+            display: inline-block;
+            font-size: 17px;
+            color: #ffffff;
+            background-color: #D22D34;
+            padding: 12px 30px;
+            border-radius: 30px;
+            margin-top: 15px;
+        }
+
+        /* ============= Wrapper Section ============== */
+        .home {
+            background-color: #D22D34;
+        }
+
+        .home .main-container {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .home .wrapper {
+            padding: 70px 30px;
+            /* position: relative; */
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .home .wrapper .content h1 {
+            text-transform: capitalize;
+            color: black;
+            font-family: 'Montserrat', sans-serif;
+            font-weight: 800;
+            font-size: 55px;
+        }
+
+        .home .wrapper .content h1 span {
+            color: #ffffff;
+        }
+
+        /* .home .wrapper .content a {
+    text-decoration: none;
+
+} */
+
+        .home .wrapper .content .main-btn {
+            text-decoration: none;
+            display: inline-block;
+            color: #000000;
+            background-color: #ffffff;
+            font-size: 20px;
+            font-weight: 600;
+            padding: 20px 50px;
+            border-radius: 50px;
+            margin-top: 100px;
+        }
+
+        .home .wrapper .image {
+            max-width: 500px;
+        }
+
+        .home .wrapper .image img {
+            width: 100%;
+        }
+
+        /* ============== Information Section ================ */
+        .information {
+            /* text-align: center;
+    background-color: #ffffff;
+    border-bottom: 1px solid #B0B0B0; */
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .information .heading {
+            text-align: left;
+
+        }
+
+        .information .main-para {
+            font-size: 18px;
+            line-height: 2;
+            color: #000000;
+        }
+
+        .information .companies {
+            max-width: 500px;
+            margin: 0 auto;
+            padding: 10px;
+            background-color: #D22D34;
+        }
+
+        /* .information .companies p {
+    font-size: 18px;
+    line-height: 1.5;
+    margin-bottom: 15px;
+} */
+
+        .information .companies img {
+            width: 100%;
+        }
+
+        /* =============== Hiring Section ============== */
+        .hiring .xcontainer {
+            /* padding-bottom: 0; */
+            margin: auto;
+        }
+
+        .hiring .heading {
+            /* max-width: 768px; */
+            /* margin: 0 auto; */
+            text-align: center;
+            margin-bottom: 30px;
+        }
+
+        .hiring .contaner-box {
+            display: grid;
+            /* grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); */
+            grid-template-columns: repeat(3, 1fr);
+            gap: 20px;
+
+
+
+        }
+
+        .hiring .contaner-box .box {
+            padding: 20px;
+        }
+
+        .hiring .contaner-box img {
+            width: 15%;
+
+
+        }
+
+        /* .hiring .contaner-box .box h2 {
+    display: inline-block;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 800;
+    color: #D22D34;
+    font-size: 30px;
+    border: 2px solid #D22D34;
+    border-radius: 50%;
+    width: 43px;
+    height: 43px;
+    line-height: 40px;
+    margin-bottom: 10px;
+} */
+
+        .hiring .contaner-box .box h3 {
+            font-size: 20px;
+            color: #000000;
+            padding-bottom: 10px;
+            font-weight: 700;
+            margin-top: 10px;
+        }
+
+        .hiring .contaner-box .box p {
+            font-size: 16px;
+            color: #000000;
+            line-height: 1.7;
+
+        }
+
+        .hiring .btn {
+            margin-left: 40%;
+            width: 20%;
+            text-align: center;
+        }
+
+        /* ============= Feedback Section ============== */
+        .feedback {
+            background-color: #222423;
+        }
+
+        .feedback .heading {
+            text-align: center;
+            color: #ffffff;
+        }
+
+        .feedback .container-box {
+            display: grid;
+            /* grid-template-columns: repeat(auto-fit, minmax(270px, 1fr)); */
+            grid-template-columns: repeat(3, 1fr);
+            gap: 20px;
+            padding-top: 30px;
+        }
+
+
+
+        .feedback .container-box .box {
+            background-color: #ffffff;
+            font-size: 16px;
+            color: #000000;
+            line-height: 1.7;
+            padding: 20px;
+            border-radius: 10px;
+        }
+
+        /* ================ Simple-step Section ================ */
+        .simple-step .heading {
+            text-align: left;
+        }
+
+        .simple-step.xcontainer {
+            max-width: 1000px;
+        }
+
+        .simple-step .container-box {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+        }
+
+        .simple-step .container-box .image {
+            flex: 1 1 320px;
+        }
+
+        .simple-step .container-box .image img {
+            width: 100%;
+        }
+
+        .simple-step .container-box .content {
+            flex: 1 1 320px;
+            padding: 20px;
+        }
+
+        .simple-step .container-box .content ol {
+            padding-left: 30px;
+        }
+
+        .simple-step .container-box .content ol li {
+            font-size: 17px;
+            line-height: 2;
+        }
+
+        /* ================= FAQs Section =============== */
+        .faqs.xcontainer {
+            padding-top: 0;
+            max-width: 1000px;
+        }
+
+        .faqs .container-box {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+        }
+
+        .faqs .container-box .faqs-left {
+            flex: 1 1 350px;
+        }
+
+        .faqs .container-box .faqs-right {
+            flex: 1 1 350px;
+        }
+
+        .faqs .container-box .box {
+            margin: 10px 0;
+        }
+
+        .faqs .container-box .box h2 {
+            font-family: 'Montserrat', sans-serif;
+            font-weight: 800;
+            font-size: 20px;
+            color: #000000;
+            display: inline;
+            padding: 10px 5px 10px 0;
+        }
+
+        .faqs .container-box .box span {
+            font-size: 17px;
+            color: #000000;
+            padding: 10px 0;
+            line-height: 1.5;
+        }
+
+
+
+        /* =============== Premium Section ============== */
+
+        .xcontainer .heading {
+            margin-bottom: 20px;
+        }
+
+        .cards {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+        }
+
+        .cards .card {
+            background-color: #D22D34;
+            padding: 60px 20px;
+            width: 400px;
+            height: 550px;
+            margin-left: 70px;
+        }
+
+        .cards .second-color {
+            background-color: black;
+        }
+
+
+        .cards .card .card-body img {
+            width: 3%;
+            margin-right: 1.5px;
+
+        }
+
+        .card .card-header {
+            text-align: center;
+        }
+
+        .card .card-header h1 {
+            color: #ffffff;
+            font-size: 20px;
+
+        }
+
+        .card .card-header p {
+            font-size: 30px;
+            color: #ffff;
+            margin: 10px 0;
+        }
+
+        .card .card-header span {
+            font-size: 15px;
+            color: #ffff;
+
+        }
+
+        .card .card-header hr {
+            width: 95%;
+
+        }
+
+        /* .card-body {
+    text-align: center;
+} */
+
+        .card-body h1 {
+            font-size: 18px;
+            color: #ffff;
+            font-family: 'Montserrat', sans-serif;
+            background-color: #e9585f;
+            text-align: left;
+            padding: 10px;
+            margin: 10px 0;
+        }
+
+        .card-body p {
+            margin-bottom: 10px;
+            color: #ffff;
+        }
+
+        .card-body .btn {
+            color: black;
+            background-color: #fff;
+            margin: 15px 0;
+        }
+
+
+
+        .premium .images {
+            max-width: 500px;
+            margin: 0 auto;
+            padding-top: 20px;
+        }
+
+        .premium .images .image1,
+        .premium .images .image2 {
+            max-width: 100%;
+        }
+
+        .premium .images .image1 img,
+        .premium .images .image2 img {
+            width: 100%;
+        }
+
+        .premium .contaner-box {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 20px;
+            margin-top: 50px;
+            margin-bottom: 20px;
+        }
+
+        .premium .contaner-box .box h3 {
+            font-size: 20px;
+            color: #000000;
+            padding-bottom: 5px;
+        }
+
+        .premium .contaner-box .box p {
+            font-size: 16px;
+            color: #000000;
+            line-height: 1.7;
+        }
+
+
+        /* =========================contact form===========  */
+        .contact {
+            text-align: center;
+            margin: auto;
+            background-color: #D22D34;
+            padding: 50px;
+        }
+
+        .contact h1 {
+            font-size: 40px;
+            font-family: 'Montserrat', sans-serif;
+            font-weight: 800;
+            text-align: center;
+            padding-bottom: 20px;
+            text-transform: capitalize;
+            color: #fff;
+
+        }
+
+        .contact p {
+            color: #fff;
+            margin: 20px;
+        }
+
+        .contact .contact-form form {
+            width: 700px;
+            margin: auto;
+            background-color: #fff;
+            padding: 40px;
+        }
+
+        .contact .contact-form input {
+
+            width: 200px;
+            height: 50px;
+            padding: 10px;
+            margin: 10px 30px;
+
+
+        }
+
+        .contact .contact-form input textarea {
+            padding: 10px;
+            width: 100%;
+
+        }
+
+        .contact .contact-form form button {
+            color: #ffffff;
+            background-color: #D22D34;
+            padding: 12px 30px;
+            border-radius: 30px;
+            margin-top: 15px;
+            width: 35%;
+            font-size: 25px;
+
+        }
+
+
+
+
+
+        /* ================ Media Query ================ */
+
+        @media(max-width: 1140px) {
+            .home .wrapper .content h1 {
+                font-size: 70px;
+            }
+
+            .home .wrapper .content .main-btn {
+                padding: 25px 40px;
+            }
+        }
+
+        @media(max-width: 992px) {
+            .heading {
+                font-size: 20px;
+                padding-bottom: 5px;
+            }
+
+            .home .wrapper {
+                padding: 30px 20px;
+            }
+
+            .home .wrapper .content h1 {
+                font-size: 25px;
+            }
+
+            .home .wrapper .content .main-btn {
+                padding: 13px 20px;
+                margin-top: 40px;
+                font-size: 13px;
+            }
+
+            .home .wrapper .image {
+                max-width: 200px;
+            }
+
+            .home .wrapper .image {
+                max-width: 400px;
+            }
+
+            .home .wrapper .image img {
+                width: 100%;
+            }
+
+
+
+            .information .companies {
+                max-width: 230px;
+            }
+
+            .information .companies img {
+                width: 100%;
+            }
+
+            .hiring .contaner-box {
+                grid-template-columns: repeat(2, 1fr);
+            }
+
+            .hiring .contaner-box {
+                margin-bottom: 10px;
+            }
+
+            .hiring .btn {
+                margin-left: 40%;
+                width: 20%;
+                text-align: center;
+                margin-bottom: 25px;
+
+                font-size: 20px;
+                padding: 10px;
+            }
+
+            .cards .card {
+                padding: 15px;
+
+            }
+
+
+
+        }
+
+        @media(max-width: 688px) {
+            .home .wrapper {
+                padding: 25px 20px;
+                flex-direction: column;
+            }
+
+            .home .wrapper .content h1 {
+                font-size: 20px;
+            }
+
+            .home .wrapper .content .main-btn {
+                padding: 8px 13px;
+                margin-top: 25px;
+                font-size: 10px;
+            }
+
+            .home .wrapper .image {
+                max-width: 240px;
+                margin-top: 20px;
+            }
+
+            .home .wrapper .image img {
+                width: 100%;
+            }
+
+            .information {
+                flex-direction: column;
+            }
+
+            .information .heading {
+                text-align: center;
+
+            }
+
+
+            .information .companies {
+                margin-top: 20px;
+                max-width: 340px;
+            }
+
+            .information .companies img {
+                width: 100%;
+            }
+
+            .hiring .contaner-box {
+                grid-template-columns: repeat(1, 1fr);
+                gap: 20px;
+                text-align: center;
+                margin-top: 30px;
+            }
+
+            .hiring .btn {
+                width: 35%;
+                margin-left: 35%;
+                margin-bottom: 30px;
+                text-align: center;
+
+            }
+
+            .feedback .container-box {
+                grid-template-columns: repeat(1, 1fr);
+            }
+
+            .cards {
+                flex-direction: column;
+
+
+            }
+
+            .cards .card {
+                width: 350px;
+                margin: 20px;
+
+
+            }
+
+            .contact .contact-form form {
+                width: 300px;
+
+                padding: 10px;
+
+
+            }
+
+            .contact .contact-form input {
+                width: 70%;
+                margin-bottom: 10px;
+            }
+
+
+
+        }
+    </style>
+</head>
+
+<body>
+    <div class="home" style="
+width: 100%;
+">
+        <div class="main-container">
+            <div class="wrapper">
+                <div class="content">
+                    <h1>experienced<br> Sushi Chefs<br> <span>Hired quicker</span></h1>
+                    <a class="main-btn" href="https://sushichefjobs.com/post-a-job">Advertise a Job</a>
+                </div>
+                <div class="image">
+                    <img src="https://iili.io/HXmjXyu.png" alt="">
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--------------------- wrapper section ends ------------------>
+    <!--------------------- Information section starts ------------------>
+    <div class="information xcontainer" style="
+width: 100%;
+">
+        <div>
+            <h2 class="heading">who are we?</h2>
+            <p class="main-para">Sushichefjobs.com is a key resource for businesses
+                and job seekers alike within the Japanese food community. We connect chefs
+                with employment opportunities in kitchens across the USA, UK and Europe.
+                From Michelin-star omakase restaurants to Japanese-Peruvian takeaway joints
+                and even supermarket sushi kiosks.
+            </p>
+        </div>
+
+        <div class="companies">
+            <!-- <p>See just some of the companies with Job Adverts on our site.</p>
+            <img src="https://iili.io/HXmjWve.png" alt=""> -->
+            <img src="asset/images/companis.png" alt="" srcset="">
+            <img src="asset/images/companislogo.png" alt="" srcset="">
+        </div>
+    </div>
+    <!--------------------- Information section ends ------------------>
+    <!--------------------- Hiring section starts ------------------>
+    <div class="hiring xcontainer" style="width: 100%;">
+        <h2 class="heading">Making the process of hiring the right chef quick
+            and simple</h2>
+        <div class="contaner-box">
+            <div class="box">
+                <img src="asset/images/Group 9.png" alt="" srcset="">
+                <h3>Hire Better and Quicker</h3>
+                <p>
+                    Get better qualified job applicants up to 6x Faster than using a
+                    general recruitment platform.
+                </p>
+            </div>
+            <div class="box">
+                <img src="asset/images/Group 10.png" alt="" srcset="">
+                <h3>Save Time and Money</h3>
+                <p>
+                    Avoid unnecessary re-hiring and re-training by hiring right the first
+                    time. Saving you precious time and money.
+                </p>
+            </div>
+            <div class="box">
+                <img src="asset/images/Group 11.png" alt="" srcset="">
+                <h3>Easy To Use For Employers</h3>
+                <p>
+                    Create a company profile and post your first job advert in less than
+                    3 minutes. Viewing, filtering and managing your applications is just as easy.
+                </p>
+            </div>
+            <div class="box">
+                <img src="asset/images/Group 14.png" alt="" srcset="">
+                <h3>Reach More Candidates, Faster</h3>
+                <p>
+                    Your job advert is shared with our huge network of experienced
+                    sushi chefs actively looking for great roles.
+                </p>
+            </div>
+            <div class="box">
+                <img src="asset/images/Group 13.png" alt="" srcset="">
+                <h3>We Go the Extra Mile</h3>
+                <p>
+                    We promote your job advert via social media, email, job boards,
+                    google jobs and advertising.
+                </p>
+            </div>
+            <div class="box">
+                <img src="asset/images/Group 12.png" alt="" srcset="">
+                <h3>Low Cost Plans</h3>
+                <p>
+                    Our job advert packages are great value for money compared to
+                    general recruitment platforms.
+                </p>
+            </div>
+
+        </div>
+        <a href="https://sushichefjobs.com/post-a-job" class="btn">Post a Job</a>
+
+
+    </div>
+    <!--------------------- Hiring section ends ------------------>
+
+    <!--------------------- Feedback section starts ------------------>
+    <div class="feedback" style="
+ width: 100%;
+">
+        <div class="xcontainer">
+            <h2 class="heading">Feedback from <br> Employers</h2>
+            <div class="container-box">
+                <div class="box">
+
+
+                    <p>
+                        “The team was more than helpful in recommending an
+                        advertising package to suit our needs and managed our account perfectly.
+                        After only a few days of posting the vacancies, we had many top quality
+                        applications and managed to hire a senior sushi chef within a week.”
+                        <br>
+                        <br>
+                        Shizuka
+                        <br>
+                        Head chef
+                    </p>
+                </div>
+                <div class="box">
+                    <p>
+                        “The process was much easier than using indeed like we
+                        normally do. We hired two chefs in the first week. Both with lots of sushi
+                        experience at top restaurants. Very impressed, thank you.”
+                        <br>
+                        <br>
+                        Dan
+                        <br>
+                        Sous chef
+                    </p>
+                </div>
+                <div class="box">
+                    <p>
+                        “We were able to fill our head chef role in less than 3 days over
+                        Christmas. It was a really stressful time for us but certainly made easier with
+                        Sushi Chef jobs.”
+                        <br>
+                        <br>
+                        Emma
+                        <br>
+                        Hiring Manager
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--------------------- Feedback section ends ------------------>
+    <!--------------------- Simple-step section starts ------------------>
+    <div class="simple-step xcontainer" style="
+ width: 100%;
+">
+        <div class="container-box">
+            <div class="image">
+                <img src="https://iili.io/HXmjjTb.png" alt="">
+            </div>
+            <div class="content">
+                <h2 class="heading">Post a Job in 4 Simple Steps</h2>
+                <ol>
+                    <li>Login or create an account</li>
+                    <li>Enter job details</li>
+                    <li>Select the posting package</li>
+                    <li>Preview and submit your job</li>
+                </ol>
+                <a href="https://sushichefjobs.com/post-a-job" class="btn">Advertise a Job</a>
+            </div>
+        </div>
+    </div>
+    <!--------------------- Simple-step section ends ------------------>
+    <!--------------------- Faqs section starts ------------------>
+    <div class="faqs xcontainer" style="
+ width: 100%;
+">
+        <h2 class="heading">FAQs</h2>
+        <div class="container-box">
+            <div class="faqs-left">
+                <div class="box">
+                    <h2>Q:</h2><span>How long does it take to hire?</span><br>
+                    <h2>A:</h2><span>Most companies usually hire within the first
+                        1-2 weeks</span>
+                </div>
+                <div class="box">
+                    <h2>Q:</h2><span>How long does it take to post a job?</span><br>
+                    <h2>A:</h2><span>You can have your company profile set up and
+                        first post live within 5 minutes. </span>
+                </div>
+                <div class="box">
+                    <h2>Q:</h2><span>Which regions do you promote jobs in?</span><br>
+                    <h2>A:</h2><span>We currently operate in the USA, UK and
+                        Europe</span>
+                </div>
+                <div class="box">
+                    <h2>Q:</h2><span>What currency are jobs posted in?</span><br>
+                    <h2>A:</h2><span>You can choose between USD, GBP and EUR</span>
+                </div>
+            </div>
+            <div class="faqs-right">
+                <div class="box">
+                    <h2>Q:</h2><span>Can I post for other chef positions?</span><br>
+                    <h2>A:</h2><span>All jobs must be specific to roles involving
+                        sushi.</span>
+                </div>
+                <div class="box">
+                    <h2>Q:</h2><span>How do you promote our job?</span><br>
+                    <h2>A:</h2><span>Through our extensive chef network, social
+                        media and advertising.</span>
+                </div>
+
+                <div class="box">
+                    <h2>Q:</h2><span>How many applications can we expect</span><br>
+                    <h2>A:</h2><span>It depends on many things like job location,
+                        salary and the company. Restaurants in smaller towns could expect fewer
+                        applications than in big cities for example, however, we push to make sure that
+                        the right candidates are applying regardless of the restaurant location.</span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Pricing section start   -->
+    <div class="xcontainer">
+        <h2 class="heading">Pricing</h2>
+
+        <div class="cards">
+            <div class="card">
+                <div class="card-header">
+                    <h1>Job Advert</h1>
+                    <p>$199 <span>Bill Monthly</span></p>
+                    <hr>
+                </div>
+                <div class="card-body">
+                    <h1>Ideal for Hiring the Best Talent, Fast!</h1>
+                    <p><img src="asset/images/icons8-checkmark-48.png" alt=""> Premium Job Advert Live for 30 Days</p>
+                    <p><img src="asset/images/icons8-checkmark-48.png" alt=""> No Commitment, Cancel Subscription Easily
+                        Anytime</p>
+                    <p><img src="asset/images/icons8-checkmark-48.png" alt=""> Company Career Page</p>
+                    <p><img src="asset/images/icons8-checkmark-48.png" alt=""> Job Alert Sent to Potential Candidates
+                        Active outreach to candidates</p>
+                    <p><img src="asset/images/icons8-checkmark-48.png" alt=""> Advertising to Promote Job</p>
+                    <p><img src="asset/images/icons8-checkmark-48.png" alt=""> Jobs Featured for 30 Days</p>
+                    <p><img src="asset/images/icons8-checkmark-48.png" alt="">
+                        Jobs Pinned to Top for the First 5 Days</p>
+                    <p><img src="asset/images/icons8-checkmark-48.png" alt=""> Social Media Sharing</p>
+                    <a href="https://sushichefjobs.com/post-a-job" class="btn">Get Started</a>
+
+                </div>
+            </div>
+            <div class="card second-color">
+                <div class="card-header">
+                    <h1>Featured Job Advert</h1>
+                    <p>$299 <span>Bill Monthly</span></p>
+                    <hr>
+                </div>
+                <div class="card-body">
+                    <h1>Ideal for Hiring the Best Talent, Fast!</h1>
+                    <p><img src="asset/images/icons8-checkmark-48.png" alt=""> Premium Job Advert Live for 30 Days</p>
+                    <p><img src="asset/images/icons8-checkmark-48.png" alt=""> No Commitment, Cancel Subscription Easily
+                        Anytime</p>
+                    <p><img src="asset/images/icons8-checkmark-48.png" alt=""> Company Career Page</p>
+                    <p><img src="asset/images/icons8-checkmark-48.png" alt=""> Job Alert Sent to Potential Candidates
+                        Active outreach to candidates</p>
+                    <p><img src="asset/images/icons8-checkmark-48.png" alt=""> Advertising to Promote Job</p>
+                    <p><img src="asset/images/icons8-checkmark-48.png" alt=""> Jobs Featured for 30 Days</p>
+                    <p><img src="asset/images/icons8-checkmark-48.png" alt="">
+                        Jobs Pinned to Top for the First 5 Days</p>
+                    <p><img src="asset/images/icons8-checkmark-48.png" alt=""> Social Media Sharing</p>
+                    <a href="https://sushichefjobs.com/post-a-job" class="btn">Get Started</a>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <section class="contact">
+        <h1>Contact Us</h1>
+        <p>Let us know how we can help you below and will get back to you as soon as possible.
+        </p>
+        <div class="contact-form">
+            <form>
+                <input type="name" placeholder="First Name">
+                <input type="name" placeholder="Last Name">
+                <input class="col-12" type="number" placeholder="Phone Number">
+                <input type="email" placeholder="Businesses Email">
+                <input type="name" placeholder="Compony Name">
+                <input type="name" placeholder="URL">
+                <textarea cols="30"></textarea>
+                <div> <button type="submit">SEND</button></div>
+
+            </form>
+
+        </div>
+    </section>
+
+    <!-- <footer>
+        <div>
+            <h2>sushichefjobs.com</h2>
+            <p><a href="http://">Jobs</a></p>
+            <p> <a href="http://"> Contact us</a></p>
+            <p><a href="http://">Blog</a></p>
+            <p><a href="http://">RSS Feed</a></p>
+
+        </div>
+        <div>
+            <h2>For Employers </h2>
+            <p><a href="http://">Register</a></p>
+            <p> <a href="http://"> Employers</a></p>
+            <p><a href="http://">Prices</a></p>
+
+        </div>
+        <div>
+            <h2>Legal </h2>
+            <p><a href="http://"> Terms of Service</a></p>
+            <p><a href="http://"> Privacy Policy</a></p>
+
+        </div>
+        <div>
+            <h2>Contact Us
+            </h2>
+            <h3>Sushichefjobs.com</h3>
+            <p><a href="http://"> info@sushichefjobs.com</a></p>
+        </div>
+
+    </footer> -->
+
+
+</body>
+
+</html>
